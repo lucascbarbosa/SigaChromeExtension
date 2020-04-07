@@ -38,11 +38,6 @@ function getDaysBetweenDates(start, end, dayName) {
   return result;
 }
 
-function addMonths(date, months) {
-  date.setMonth(date.getMonth() + months);
-  return date;
-}
-
 function extractSiga() {
   let coursesfinal = []
   let postproc;
