@@ -126,10 +126,7 @@ function addEvent(course) {
 
     var url = 'https://calendar.google.com/calendar/r/eventedit?location=' + location + '&text=' + title + '&dates=' + date + 'T' + startHour + '/' + date + 'T' + stopHour
     console.log(url)
-
     window.open(url)
-
-    setTimeout(function () { console.log('Evento adicionado com sucesso!') }, 1000)
 
 }
 
