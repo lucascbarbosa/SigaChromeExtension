@@ -16,11 +16,13 @@
   "background": {
     "scripts": [
       "background.js", "eventSave.js"
-    ]
+    ],
+    "persistent": false
   },
 
   "permissions": [
     "activeTab",
-    "tabs"
+    "tabs",
+    "https://calendar.google.com/calendar/r/eventedit?location=*"
   ]
 }
