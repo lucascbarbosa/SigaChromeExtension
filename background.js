@@ -1,5 +1,5 @@
 chrome.browserAction.onClicked.addListener(function(tab) {
-  chrome.tabs.executeScript(null, {file: "content.js"});
+  chrome.tabs.executeScript(null, {file: "./js/content.js"});
   
 });
 
@@ -12,7 +12,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 chrome.tabs.onUpdated.addListener(function (tabId,info,tab) {
   if(tab.url.startsWith('https://calendar.google.com/calendar/r/eventedit?location=')){
     if (info.status === 'complete') {
-        chrome.tabs.executeScript(tabId, {file: "newtab.js"});
+        chrome.tabs.executeScript(tabId, {file: "./js/newtab.js"});
         sleep(500);
         chrome.tabs.remove(tabId);
     }
