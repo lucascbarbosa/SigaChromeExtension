@@ -3,8 +3,6 @@ chrome.browserAction.onClicked.addListener(function(tab) {
   
 });
 
-let tabs_created_by_extension = [];
-
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   tabs_created_by_extension.push(request.url)
 });
