@@ -8,18 +8,19 @@
     "48": "minerva48.png",
     "128": "minerva128.png"
   },
-  "author": "Luis Fernando Lins, Lu Bruno Dantas e Lucas Barbosa",
-  
+  "author": "Luis Fernando Lins, Bruno Dantas e Lucas Barbosa",
   "browser_action": {
-      "default_icon": "minerva16.png",
-      "default_title":"Siga Extractor"
+    "default_icon": "minerva16.png",
+    "default_title": "Siga Extractor"
   },
-
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js", "eventSave.js"
+    ]
   },
 
-  "permissions": ["activeTab"]
-
-  
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ]
 }
